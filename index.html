@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mundo Fracciones</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="functionsG.js"></script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">📐 Aprende a operar fracciones</div>
+    <ul class="nav-links">
+      <li><a href="#linked">Inicio</a></li>
+      <li><a href="#linked2">Calculadora</a></li>
+      <li><a href="#linked3">Ecuaciones</a></li>
+      <li><a href="#linked4">Práctica</a></li>
+    </ul>
+  </nav>
+  <div id="linked"></div>
+  <header id="inicio" class="hero">
+    <h1>¿Qué es una fracción?</h1><br><br>
+    <p>Una fracción representa una o varias partes iguales en las que se divide un todo unidad, 
+      estructurada mediante un numerador (partes tomadas) y un denominador (partes totales), 
+      existiendo tipos como las propias (menores a la unidad), impropias (mayores a la unidad),
+      mixtas y equivalentes. Para operar con ellas, la suma y resta requieren 
+      mantener el denominador si son homogéneas o encontrar un denominador común 
+      (MCM) si son heterogéneas; la multiplicación se realiza de forma directa multiplicando 
+      numeradores entre sí y denominadores entre sí; la división se efectúa multiplicando 
+      en cruz o invirtiendo la segunda fracción; y finalmente, toda fracción puede 
+      simplificarse (dividiendo ambos términos por un mismo número) o amplificarse 
+      (multiplicándolos) para facilitar su resolución o expresar el resultado en su forma más simple.</p>
+  </header>
+
+
+  <div id="linked2"></div>
+  <main class="container">
+    <nav id="content">
+      <h1 id="title">Operaciones matemáticas realizadas con fracciones</h1> 
+      <p>A continuación tenemos una calculadora de fracciones,
+        lo único que debes hacer es ingresar los números que se te ocurran,
+        elige la operación para realizar. Y listo, tendrás el resultado en
+        un parpadeo. ¡PRUEBALO AHORA!
+      </p>
+
+      <div class="fraction-builder">
+        <div id="container">
+    <div id="op-1">
+        <input type="number" id="deno1" placeholder="denominador">
+        <nav id="bar1"></nav>
+        <input type="number" id="divi1" placeholder="divisor">
+    </div>
+
+    <nav id="operation">
+        <select id="operators"><center>
+            <option value="sum">+</option>
+            <option value="res">-</option>
+            <option value="mul">*</option>
+            <option value="div">/</option>
+            </center>
+        </select>
+    </nav>
+
+    <div id="op-2">
+        <input type="number" id="deno2" placeholder="denominador">
+        <nav id="bar2"></nav>
+        <input type="number" id="divi2" placeholder="divisor">
+    </div>
+
+    <nav id="calculator"><center>
+        <button onclick="calculate()" id="equal">=</button>
+        </center>
+    </nav>
+
+    <aside id="result">
+        <h1 id="res">0</h1>
+        <nav id="bar3"></nav>
+        <h1 id="res2">0</h1>
+    </aside>
+    </div>
+      </div>
+    </nav>
+    <br><br>
+    <div id="linked3"></div>
+    <section id="ejercicios">
+    <h1 id="ecuacion">¿Qué es una ecuación?</h1>
+    <p>Una ecuación es una igualdad matemática entre dos expresiones 
+      algebraicas que contienen números y letras desconocidas llamadas incógnitas, 
+      cuyo objetivo principal es encontrar el valor exacto de dicha variable que hace 
+      que la igualdad sea verdadera. Se compone de dos miembros separados por el signo igual 
+      = y se clasifica según el exponente de su variable, 
+      siendo las más comunes las de primer grado o lineales (como 2x + 5 = 11) y 
+      las de segundo grado o cuadráticas (como x^2 - 5x + 6 = 0); para resolverla,
+       se aplican las propiedades de las operaciones inversas mediante la transposición 
+       de términos, donde lo que está sumando pasa restando, lo que resta pasa sumando, 
+       lo que multiplica pasa dividiendo y lo que divide pasa multiplicando, 
+       manteniendo siempre el equilibrio en ambos lados hasta despejar la incógnita.</p>
+
+    <br><br>
+    <div id="linked4"></div>
+    <h1 id="quiz-op">Test: Resuelve ecuaciones</h1>
+    <p>¡Pon a prueba tus habilidades y demuestra de qué estás hecho! 
+      Resolver ecuaciones no es solo despejar números, es entrenar a tu cerebro para descifrar 
+      acertijos y superar retos de lógica en tiempo récord. Acepta el desafío, 
+      mide tus conocimientos en este quiz rápido y descubre si realmente tienes la mente 
+      ágil de un maestro del álgebra. ¿Te atreves a obtener la puntuación perfecta?</p>
+
+    <div class="card">
+            <div class="equation-box">
+                <h1 id="ecuation">29 + 63X = 8 + 41X</h1>
+            </div>
+
+            <div class="options-container">
+                <div class="option">
+                    <div class="circle" onclick="ValidarRespuesta(0)">A</div>
+                    <span class="number"></span>
+                </div>
+                <div class="option">
+                    <div class="circle" onclick="ValidarRespuesta(1)">B</div>
+                    <span class="number"></span>
+                </div>
+                <div class="option">
+                    <div class="circle" onclick="ValidarRespuesta(2)">C</div>
+                    <span class="number"></span>
+                </div>
+            </div>
+
+            <div class="timer-container">
+                <div class="timer-title">Timer</div>
+                <div class="timer-clock"><h1 id="timer">0:00</h1></div>
+            </div>
+        </div>
+    </section>
+
+  </main>
+  <br><br><br><br><br>
+</body>
+</html>
