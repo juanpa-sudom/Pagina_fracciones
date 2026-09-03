@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones jeje</title>
+    <script src="functions.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div id="container">
+    <div id="op-1">
+        <input type="number" id="deno1" placeholder="denominador">
+        <nav id="bar1"></nav>
+        <input type="number" id="divi1" placeholder="divisor">
+    </div>
+
+    <nav id="operation">
+        <select id="operators"><center>
+            <option value="sum">+</option>
+            <option value="res">-</option>
+            <option value="mul">*</option>
+            <option value="div">/</option>
+            </center>
+        </select>
+    </nav>
+
+    <div id="op-2">
+        <input type="number" id="deno2" placeholder="denominador">
+        <nav id="bar2"></nav>
+        <input type="number" id="divi2" placeholder="divisor">
+    </div>
+
+    <nav id="calculator"><center>
+        <button onclick="calculate()" id="equal">=</button>
+        </center>
+    </nav>
+
+    <aside id="result">
+        <h1 id="res">0</h1>
+        <nav id="bar3"></nav>
+        <h1 id="res2">0</h1>
+    </aside>
+    </div>
+
+
+</body>
+</html>

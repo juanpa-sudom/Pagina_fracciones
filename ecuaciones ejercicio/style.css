@@ -1,0 +1,127 @@
+* {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #2e0099;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Banner superior */
+        header {
+            background-color: #04f7ff;
+            width: 100%;
+            padding: 25px 10px;
+            text-align: center;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        header h1 {
+            font-size: 1.8rem; 
+            margin-bottom: 5px;
+        }
+
+        header h2 {
+            font-size: 1.5rem;
+            font-weight: normal;
+        }
+
+        /* Contenedor principal */
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Tarjeta amarilla central */
+        .card {
+            background-color: #04f7ff;
+            border-radius: 20px;
+            padding: 40px 30px 30px;
+            width: 100%;
+            max-width: 550px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Caja de la ecuación */
+        .equation-box {
+            background-color: #0000006e;
+            width: 100%;
+            padding: 15px;
+            border-radius: 15px;
+            text-align: center;
+            color: #ffffff;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+
+        /* Opciones de respuesta */
+        .options-container {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-bottom: 35px;
+        }
+
+        .option {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .circle {
+            background-color: #0000006e;
+            color: #ffffff;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .circle:hover {
+            transform: scale(1.08);
+            background-color: #3700ff;
+        }
+
+        .number {
+            color: #ffffff;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        /* Temporizador */
+        .timer-container {
+            text-align: center;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .timer-title {
+            font-size: 1.3rem;
+            margin-bottom: 3px;
+        }
+
+        .timer-clock {
+            font-size: 1.2rem;
+        }
